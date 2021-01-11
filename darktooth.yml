@@ -1,47 +1,61 @@
 information:
-  name: nord
+  name: darktooth
   background: dark
-  author: "Christian Chiarulli <chrisatmachine@gmail.com>"
+  author: "david.susskind <david.susskind@gmail.com>"
 
 palette:
   fg: "#D8DEE9"
-  bg: "#2E3440"
+  bg: "#151515"
 
-  nord0: "#2E3440"
-  nord1: "#3B4252"
-  nord2: "#434C5E"
-  nord3: "#4C566A"
+  nord0: "#151515"
+  nord1: "#32302F"
+  nord2: "#504945"
+  nord3: "#665C54"
+  nord4: "#928374"
+  nord5: "#a69886"
+  nord6: "#D5C4A1"
+  nord7: "#bab27b"
+  nord8: "#c97c73"
+  nord9: "#c2824e"
+  nord10: "#c2ba84"
+  nord11: "#7d9e72"
+  nord12: "#8BA59B"
+  nord13: "#7c9da3"
+  nord14: "#ba91a9"
+  nord15: "#ad9268"
   nord3_gui_bright: "#616E88"
-  nord4: "#D8DEE9"
-  nord5: "#E5E9F0"
-  nord6: "#ECEFF4"
-  nord7: "#8FBCBB"
-  nord8: "#88C0D0"
-  nord9: "#81A1C1"
-  nord10: "#5E81AC"
-  nord11: "#BF616A"
-  nord12: "#D08770"
-  nord13: "#EBCB8B"
-  nord14: "#A3BE8C"
-  nord15: "#B48EAD"
   line_grey: "#5C6370"
   cursor_grey: "#2C323C"
   special_grey: "#3B4048"
+  searchfg: '#ffffff'
+  searchbg: '#585858'
+  matchparenfg: '#000000'
+  matchparenbg: '#8f1a34'
+  diffchangebg: '#332d03'
+  difftextbg: '#103315'
+  diffdeletebg: '#4f1b1f'
+  diffaddgb: '#16303d'
+  string: '#8c9e54'
+  incsearchbg: '#202020' 
+  incsearchfg: '#83b7fe'
+  cocvirtual: '#69302a'
+  cocerror: '#ba2614'
+  cocerrorbg: '#32302F' 
 
 highlights:
 
   # Editor
   ColorColumn: "- nord1"
-  Cursor: "nord0 nord4"
+  Cursor: "nord0 nord5"
   CursorLine: "- nord1"
-  Error: "nord4 nord11"
-  LineNr: "nord3"
-  MatchParen: "nord8 nord3"
-  NonText: "nord2"
-  Normal: "nord4 nord0"
-  Pmenu: "nord4 nord2"
+  Error: "nord0 nord8"
+  LineNr: "nord3 nord1"
+  MatchParen: "matchparenfg matchparenbg"
+  NonText: "nord3"
+  Normal: "nord5 nord0"
+  Pmenu: "nord4 nord1"
   PmenuSbar: "nord4 nord2"
-  PmenuSel: "nord8 nord3"
+  PmenuSel: "nord1 nord4"
   PmenuThumb: "nord8 nord3"
   SpecialKey: "nord3"
   SpellBad: "nord11 nord0 u"
@@ -49,7 +63,7 @@ highlights:
   SpellLocal: "nord5 nord0 u"
   SpellRare: "nord6 nord0 u"
   Visual: "- nord2"
-  VisualNOS: "- nord2"
+  VisualNOS: "nord8"
   QuickFixLine: "bg nord13"
   Terminal: "nord6 bg"
 
@@ -60,101 +74,102 @@ highlights:
 
   # Gutter
   CursorColumn: "- nord1"
-  CursorLineNr: "nord4"
-  Folded: "nord3 nord0"
-  FoldColumn: "nord3 nord0"
-  SignColumn: "nord1 nord0"
+  CursorLineNr: "nord5 nord1"
+  Folded: "nord3 nord1"
+  FoldColumn: "nord12 nord1"
+  SignColumn: "nord3 nord1"
 
   # Navigation
-  Directory: "nord8"
+  Directory: "nord13"
 
   # Prompt/Status
   EndOfBuffer: "nord1"
-  ErrorMsg: "nord4 nord11"
-  ModeMsg: "nord4"
-  MoreMsg: "nord8"
-  Question: "nord4"
-  StatusLine: "nord6 nord3"
-  StatusLineNC: "nord4 nord3"
+  ErrorMsg: "nord8 nord0"
+  ModeMsg: "nord11"
+  MoreMsg: "nord11"
+  Question: "nord13"
+  StatusLine: "nord4 nord2"
+  StatusLineNC: "nord3 nord1"
   StatusLineTerm: "nord8 nord3"
   StatusLineTermNC: "nord4 nord3"
-  WarningMsg: "nord0 nord13"
-  WildMenu: "nord8 nord1"
+  WarningMsg: "nord8"
+  WildMenu: "nord8 nord10"
 
   # Search (using high contrast search)
   IncSearch: "nord0 nord13 u"
-  Search: "nord0 nord13"
+  Search: "searchfg searchbg"
 
   # Tabs
-  TabLine: "nord4 nord1"
-  TabLineFill: "nord4 nord1"
-  TabLineSel: "nord8 nord3"
+  TabLine: "nord3 nord1"
+  TabLineFill: "nord3 nord1"
+  TabLineSel: "string nord1"
 
   # Window
-  Title: "nord4"
-  VertSplit: "nord2 nord0"
+  Title: "nord13"
+  VertSplit: "nord2 nord2"
 
   # Language Base Groups
   Boolean: "nord9"
-  Character: "nord14"
-  Comment: "nord3_gui_bright - i"
-  Conditional: "nord9"
-  Constant: "nord8"
-  Define: "nord9"
-  Delimeter: "nord6"
-  Exception: "nord9"
-  Float: "nord15"
-  Function: "nord8"
-  Identifier: "nord4"
-  Include: "nord9"
-  Keyword: "nord9"
-  Label: "nord9"
-  Number: "nord15"
-  Operator: "nord9"
-  PreProc: "nord9"
-  Repeat: "nord9"
-  Special: "nord10"
-  SpecialChar: "nord13"
+  Character: "nord8"
+  Comment: "nord3"
+  Conditional: "nord14"
+  Constant: "nord9"
+  Define: "nord14"
+  Delimeter: "nord15"
+  Delimiter: "nord15"
+  Exception: "nord8"
+  Float: "nord9"
+  Function: "nord13"
+  Identifier: "nord8"
+  Include: "nord13"
+  Keyword: "nord14"
+  Label: "nord10"
+  Number: "nord9"
+  Operator: "nord5"
+  PreProc: "nord10"
+  Repeat: "nord10"
+  Special: "nord12"
+  SpecialChar: "nord15"
   SpecialComment: "nord8 - i"
-  Statement: "nord15"
-  StorageClass: "nord9"
-  String: "nord14"
-  Structure: "nord13"
-  Tag: "nord4"
-  Todo: "nord13"
-  Type: "nord9"
-  Typedef: "nord9"
-  Macro: "nord9"
+  Statement: "nord8"
+  StorageClass: "nord10"
+  String: "string"
+  Structure: "nord14"
+  Tag: "nord10"
+  Todo: "nord10 nord1"
+  Type: "nord10"
+  Typedef: "nord10"
+  Macro: "nord8"
   PreCondit: "nord9"
 
   # Git
-  DiffAdd: "nord14 nord1"
-  DiffChange: "nord13 nord1"
-  DiffDelete: "nord11 nord1"
-  DiffText: "nord9 nord1"
-  diffAdded: "nord14 nord1"
-  diffChanged: "nord13 nord1"
-  diffRemoved: "nord11 nord1"
-  diffFileId: "nord10 - br"
-  diffFile: "special_grey"
-  diffNewFile: "nord14"
-  diffOldFile: "nord11"
-  gitconfigVariable: "nord7"
-  debugPc: "- nord7"
-  debugBreakpoint: "nord11 - r"
+  # DiffAdd: "nord14 nord1"
+  DiffChange: "- diffchangebg"
+  DiffDelete: "- diffdeletebg"
+  DiffText: "- diffdeletebg"
+  DiffAdd: "- diffaddgb"
+  # diffChanged: "nord13 nord1"
+  # diffRemoved: "nord11 nord1"
+  # diffFileId: "nord10 - br"
+  # diffFile: "special_grey"
+  # diffNewFile: "nord14"
+  # diffOldFile: "nord11"
+  # gitconfigVariable: "nord7"
+  # debugPc: "- nord7"
+  # debugBreakpoint: "nord11 - r"
 
   # -- Start Treesitter --
   # Misc
   TSError: "nord11 - u"
-  TSPunctDelimiter: "nord9"
-  TSPunctBracket: "nord6"
+  TSPunctDelimiter: "nord7"
+  TSPunctBracket: "nord15"
   TSPunctSpecial: "nord6"
   # Constants
   TSConstant: "nord8"
   TSConstBuiltin: "nord9"
   TSConstMacro: "nord7"
-  TSStringRegex: "nord14"
-  TSString: "nord14"
+  TSStringRegex: "nord7"
+  TSString: "string"
   TSStringEscape: "nord8"
   TSCharacter: "nord14"
   TSNumber: "nord15"
@@ -165,38 +180,38 @@ highlights:
   TSNamespace: "nord6"
   # Functions
   TSFuncBuiltin: "nord8"
-  TSFunction: "nord8"
+  TSFunction: "nord13"
   TSFuncMacro: "nord8"
   TSParameter: "nord5"
   TSParameterReference: "nord9"
   TSMethod: "nord8"
   TSField: "nord8"
-  TSProperty: "nord9"
-  TSConstructor: "nord7"
+  TSProperty: "nord8"
+  TSConstructor: "nord12"
   # Keywords
-  TSConditional: "nord9"
+  TSConditional: "nord14"
   TSRepeat: "nord15"
-  TSLabel: "nord8"
-  TSKeyword: "nord9"
+  TSLabel: "nord7"
+  TSKeyword: "nord14"
   TSKeywordFunction: "nord9"
   TSKeywordOperator: "nord9"
   TSOperator: "nord9"
-  TSException: "nord9"
+  TSException: "nord8"
   TSType: "nord7"
   TSTypeBuiltin: "nord9"
-  TSStructure: "#FF00FF"
-  TSInclude: "nord9"
+  # TSStructure: "#FF00FF"
+  TSInclude: "nord13"
   # Variable
   TSVariable: "nord5"
   TSVariableBuiltin: "nord9"
   # Text
-  TSText: "#FFFF00"
-  TSStrong: "#FFFF00"
-  TSEmphasis: "#FFFF00"
-  TSUnderline: "#FFFF00"
-  TSTitle: "#FFFF00"
-  TSLiteral: "#FFFF00"
-  TSURI: "#FFFF00"
+  # TSText: "#FFFF00"
+  # TSStrong: "#FFFF00"
+  # TSEmphasis: "#FFFF00"
+  # TSUnderline: "#FFFF00"
+  # TSTitle: "#FFFF00"
+  # TSLiteral: "#FFFF00"
+  # TSURI: "#FFFF00"
   # Tags
   TSTag: "nord9"
   TSTagDelimiter: "line_grey"
@@ -260,43 +275,18 @@ highlights:
   CocExplorerFileModified: "nord15"
   CocExplorerFileHidden: "line_grey"
   CocExplorerHelpLine: "nord15"
+  CocErrorVirtualText: 'cocvirtual'
+  CocErrorSign: 'cocerror cocerrorbg'
+  CocExplorerFileIconNerdfont_javascript: 'nord10'
+  CocExplorerFileIconNerdfont_json: 'nord10'
+  CocExplorerFileIconNerdfont_license: 'nord10'
+  CocExplorerFileIconNerdfont_typescript: 'nord13'
+  CocExplorerFileIconNerdfont_readme: 'nord13'
+  CocExplorerFileIconNerdfont_webpack: 'nord13'
+  CocExplorerFileIconNerdfont_vim: 'string'
+  # CocUnderline: '- -'
 
-  # -- START Easymotion --
-  EasyMotionTarget: "nord11 - b"
-  EasyMotionTarget2First: "nord11 - b"
-  EasyMotionTarget2Second: "nord11 - b"
-  EasyMotionShade: ""
 
-  # -- Sneak
-  Sneak: "nord0 nord13 u" 
-  SneakScope: "nord6 bg"
-  SneakLabel: "nord0 nord13 u" 
-  SneakLabelMask: "nord13" 
-
-  # -- START Startify --
-  StartifyNumber: "nord15"
-  StartifySelect: "nord14"
-  StartifyBracket: "nord10"
-  StartifySpecial: "nord7"
-  StartifyVar: "nord10"
-  StartifyPath: "nord10"
-  StartifyFile: "nord7"
-  StartifySlash: "nord10"
-  StartifyHeader: "nord14"
-  StartifySection: "nord15"
-  StartifyFooter: "nord14"
-
-  # -- START WhichKey --
-  WhichKey: "nord15"
-  WhichKeySeperator: "nord14"
-  WhichKeyGroup: "nord10"
-
-  # GitGutter
-  GitGutterAdd: "nord14"
-  GitGutterChange: "nord13"
-  GitGutterChangeDelete: "nord11"
-  GitGutterDelete: "nord11"
-  
   # Fugitive
   gitcommitDiscardedFile: "nord11"
   gitcommitSelectedFile: "nord14"

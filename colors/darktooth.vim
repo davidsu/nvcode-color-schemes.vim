@@ -33,7 +33,7 @@ hi healthSuccess guifg=#ba91a9 ctermfg=139 guibg=#32302f ctermbg=236 gui=NONE ct
 hi healthWarning guifg=#7c9da3 ctermfg=109 guibg=#32302f ctermbg=236 gui=NONE cterm=NONE
 hi CursorColumn guifg=NONE ctermfg=NONE guibg=#32302f ctermbg=236 gui=NONE cterm=NONE
 hi CursorLineNr guifg=#a69886 ctermfg=138 guibg=#32302f ctermbg=236 gui=NONE cterm=NONE
-hi Folded guifg=#665c54 ctermfg=59 guibg=#32302f ctermbg=236 gui=NONE cterm=NONE
+hi Folded ctermfg=244 guibg=#32302f ctermbg=236 gui=NONE cterm=NONE guifg=#928374  
 hi FoldColumn guifg=#8ba59b ctermfg=247 guibg=#32302f ctermbg=236 gui=NONE cterm=NONE
 hi SignColumn guifg=#665c54 ctermfg=59 guibg=#32302f ctermbg=236 gui=NONE cterm=NONE
 hi Directory guifg=#7c9da3 ctermfg=109 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE

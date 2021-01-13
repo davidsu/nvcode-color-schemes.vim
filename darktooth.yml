@@ -75,7 +75,7 @@ highlights:
   # Gutter
   CursorColumn: "- nord1"
   CursorLineNr: "nord5 nord1"
-  Folded: "nord3 nord1"
+  Folded: "nord4 nord1"
   FoldColumn: "nord12 nord1"
   SignColumn: "nord3 nord1"
 

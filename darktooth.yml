@@ -5,9 +5,9 @@ information:
 
 palette:
   fg: "#D8DEE9"
-  bg: "#151515"
+  bg: "#000000"
 
-  nord0: "#151515"
+  nord0: "#000000"
   nord1: "#32302F"
   nord2: "#504945"
   nord3: "#665C54"
